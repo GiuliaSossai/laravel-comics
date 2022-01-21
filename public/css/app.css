@@ -156,3 +156,72 @@ header .container .header-right ul li a.active, header .container .header-right 
 .footer-bottom .container .follow ul a {
   padding: 0 8px;
 }
+
+main {
+  background-color: #1C1C1C;
+  text-align: center;
+}
+main .jumbotron {
+  height: 400px;
+  background-position: top;
+  background-image: url("/img/jumbotron.jpg");
+  background-size: cover;
+}
+main .container {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: start;
+}
+main .container button.big-btn {
+  font-size: 24px;
+  padding: 8px 24px;
+  margin-top: -25px;
+  margin-bottom: 2rem;
+}
+main .container .main-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+main button.btn {
+  font-size: 12px;
+  padding: 8px 40px;
+  margin-bottom: 1rem;
+}
+main .card-box {
+  flex-basis: calc(100% / 6);
+  border: 1rem solid #1C1C1C;
+  margin-bottom: 1rem;
+}
+main .card-box img {
+  width: 100vw;
+  height: 188px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+main .card-box h5 {
+  padding-top: 8px;
+}
+
+section {
+  background-color: #0282F9;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  font-size: 14px;
+}
+section .container {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .container .item {
+  display: flex;
+  align-items: center;
+}
+section .container .item .little-img {
+  width: 30px;
+  margin-right: 1rem;
+}

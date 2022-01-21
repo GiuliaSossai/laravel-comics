@@ -15,7 +15,8 @@
     @include('partials.header')
 
     <!-- qui ci va codice diverso per ogni sezione -->
-    @yieald('content')
+    @yield('content')
+    @yield('bluebar')
 
     @include('partials.footer')
 </body>
