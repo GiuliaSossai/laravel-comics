@@ -108,6 +108,9 @@ header .container .header-right ul li a.active, header .container .header-right 
 .related .little-title.listed {
   padding: 1rem 0;
 }
+.related .little-title p {
+  margin-bottom: 0;
+}
 .related .little-title p a {
   color: #959595;
   font-size: 16px;
