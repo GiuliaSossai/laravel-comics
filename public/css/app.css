@@ -182,11 +182,6 @@ main .container .main-cards {
   display: flex;
   flex-wrap: wrap;
 }
-main button.btn {
-  font-size: 12px;
-  padding: 8px 40px;
-  margin-bottom: 1rem;
-}
 main .card-box {
   flex-basis: calc(100% / 6);
   border: 1rem solid #1C1C1C;
@@ -202,6 +197,11 @@ main .card-box img {
 }
 main .card-box h5 {
   padding-top: 8px;
+}
+main button {
+  font-size: 12px;
+  padding: 8px 40px;
+  margin-bottom: 1rem;
 }
 
 section {
@@ -224,4 +224,10 @@ section .container .item {
 section .container .item .little-img {
   width: 30px;
   margin-right: 1rem;
+}
+section .container .item a {
+  color: #fff;
+}
+section .container .item a:hover {
+  color: #000;
 }

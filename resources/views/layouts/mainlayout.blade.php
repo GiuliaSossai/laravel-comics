@@ -16,7 +16,9 @@
 
     <!-- qui ci va codice diverso per ogni sezione -->
     @yield('content')
-    @yield('bluebar')
+    <!-- @yield('bluebar') -->
+    <!-- invece di fare uno yeld ho ftto un include, cos'è meglio? -->
+    @include('partials.section')
 
     @include('partials.footer')
 </body>

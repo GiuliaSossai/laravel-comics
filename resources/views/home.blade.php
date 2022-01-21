@@ -1,63 +1,39 @@
 @extends('layouts.mainlayout')
 
 @section('content')
-    
     <main>
-      <div class="jumbotron"></div>
+        <div class="jumbotron"></div>
 
-      <div class="container">
-         <button class="big-btn">current series</button>
-         <div class="main-cards">
-            <div class="card-box">
-                <!-- <img :src="card.thumb" :alt="card.series">
-                
-                <h5></h5> -->
-            </div>
-         </div>  
-      </div>
+        <div class="container">
+            <button class="big-btn">current series</button>
+            <div class="main-cards">
+                @foreach (config('comics') as $comic)
+                <div class="card-box">
+                    <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
+                    
+                    <h5>{{$comic['series']}}</h5>
+                </div>
+                @endforeach
+            </div>  
+        </div>
 
-      <button class="btn">load more</button>
+        <button>load more</button>
+        <!-- <button class="btn">load more</button> -->
    </main>
 @endsection
 
-@section('bluebar')
+<!-- @section('bluebar')
     <section>
         <div class="container">
+            @foreach (config('bluebar') as $item)
             <div class="item">
                 <div class="little-img">
-                    <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="DC">
+                    <img src="{{$item['img']}}" alt="{{ $item['alt']}}">
                 </div>
-            <div class="img-text">digital comics</div>
+                <div class="img-text">{{ $item['text']}}</div>
+            </div>
+            @endforeach
         </div>
-
-        <div class="item">
-          <div class="little-img">
-             <img src="{{ asset('img/buy-comics-merchandise.png')}}" alt="merchandise">
-          </div>
-          <div class="img-text">dc merchandise</div>
-        </div>
-
-        <div class="item">
-          <div class="little-img">
-             <img src="{{asset('img/buy-comics-subscriptions.png')}}" alt="subscription">
-          </div>
-          <div class="img-text">subscription</div>
-        </div>
-
-        <div class="item">
-          <div class="little-img">
-             <img src="{{asset('img/buy-comics-shop-locator.png')}}" alt="shop locator">
-          </div>
-          <div class="img-text">comic shop locator</div>
-        </div>
-
-        <div class="item">
-          <div class="little-img">
-             <img src="{{asset('img/buy-dc-power-visa.svg')}}" alt="power visa">
-          </div>
-          <div class="img-text">dc power visa</div>
-        </div>
-      </div>
    </section>
 
-@endsection
+@endsection -->
